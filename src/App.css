@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+
+.container{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  align-items: center;
+  max-height: 400px;
+}
+
+.inputFile{
+  margin-left: 80px;
+}
+
+.button{
+  margin-left: 200px;
+  align-content: center;
+ 
+}
+
+.tableStyle{
+  max-width: 80%;
+  align-content: center;
+  margin-left: 10%;
+}
+
+
