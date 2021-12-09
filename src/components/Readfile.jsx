@@ -37,19 +37,22 @@ const Readfile = () => {
     <>
       <div className="container">
         <div className="inputFile">
-        <input
-          type="file"
-          onChange={(e) => {
-            const file = e.target.files[0];
-            readExcelFile(file);
-          }}
-        />
+          <input
+            type="file"
+            onChange={(e) => {
+              const file = e.target.files[0];
+              readExcelFile(file);
+            }}
+          />
         </div>
       </div>
       <div id="tableContent">
-        <PDFExport ref={pdfExportComponent} scale={0.4}
-        paperSize="A4"
-        margin="0.4cm">
+        <PDFExport
+          ref={pdfExportComponent}
+          scale={0.4}
+          paperSize="A4"
+          margin="0.4cm"
+        >
           <Table className="tableStyle" striped bordered hover size="sx">
             <thead>
               <tr>
